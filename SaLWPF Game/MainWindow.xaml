@@ -1,0 +1,24 @@
+﻿<Window x:Class="SaLWPF_Game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaLWPF_Game"
+        mc:Ignorable="d"
+        Title="Snakes and Ladders Lilac" Height="815" Width="750">
+    <Canvas Name="MyCanvas" Focusable="True" MouseLeftButtonDown="OnClickEvent" Background="Beige">
+        <Label FontSize="26" FontWeight="ExtraBold" Content="Snakes and Ladders Game" Foreground="Red" HorizontalAlignment="Left" Canvas.Left="215" VerticalAlignment="Center" />
+        <Label FontSize="15" FontWeight="Bold" Content="Instructions: The main objective is to reach to the final square by rolling the dice, good luck!" Foreground="Red" HorizontalAlignment="Left" Canvas.Left="38" VerticalAlignment="Top" Canvas.Top="30" />
+
+        <Image Source="images/player.gif" Width="30" Canvas.Left="50" Canvas.Top="697" />
+        <Image Source="images/opponent.gif" Width="30" Canvas.Left="250" Canvas.Top="697" />
+
+        <Label Name="txtPlayer" FontSize="16" FontWeight="Bold" Content="00" Canvas.Left="105" Canvas.Top="700" />
+        <Label Name="txtPlayerPosition" FontSize="16" FontWeight="Bold" Content="Player 1 is at .." Canvas.Left="105" Canvas.Top="720" />
+
+        <Label Name="txtOpponent" FontSize="16" FontWeight="Bold" Content="00" Canvas.Left="300" Canvas.Top="700" />
+        <Label Name="txtOpponentPosition" FontSize="16" FontWeight="Bold" Content="Player 2 is at .." Canvas.Left="300" Canvas.Top="720" />
+
+        <Button Name="DiceButton" FontSize="20" FontWeight="Bold" Content="Roll the dice" Height="64" Width="180" Canvas.Left="500" Canvas.Top="685" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Window>
